@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+body{
+    margin-top: 100px;
+}
+.keyframe{
+    width: 3000px;
+      margin: auto;
+    overflow: hidden;
+    background: rgba(163, 283, 244, .5);
+animation: key 20s infinite linear;
+transform: rotateX(0);
+}
+@keyframes key{
+25%{
+    background: rgba(163, 283, 244, .5);
+}
+50%{
+    background: rgba(163, 283, 244, .5);
+}
+75%{
+    background: rgba(163, 283, 244, .5);
+    
+}
+90%{
+    background: #3b4c7a;
+}
+100%{
+  background: #000;
+}
+}
+.oy img{
+width: 350px;
+height: 350px;
+background: #8d8d8d;
+border-radius: 50%;
+transform: translate(100px, -700px);
+animation: oy 20s infinite linear;
+opacity: 0;
+box-shadow: blue 5px 5px 500px;
+}
+@keyframes oy{
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0.4;
+    }
+    90%{
+        opacity: 1;
+        box-shadow: 5px 5px blue 100px;
+    }
+    100%{
+opacity: 1;
+transform: translate(800px, -500px);
+box-shadow: 5px 5px blue 100px;
+    }
+}
+
+
+.bulut{
+    display: flex;
+    justify-content: space-between;
+    width: 2000px;
+margin: auto;
+}
+.bulut img{
+    width: 700px;
+    height: 250px;
+    transform: translate(-2000px, -500px);
+    animation: bulut 20s linear infinite;
+}
+@keyframes bulut{
+100%{
+    opacity: 0;
+    transform: translate(200px, -500px);
+}
+
+}
+.darat{
+    width: 3000px;
+    display: flex;
+    justify-content: space-between;
+}
+.quyosh{
+    width: 3000px;
+    margin-top: 400px;
+    
+   }
+.quyosh img{
+    width: 400px;
+    height: 400px;
+    animation: quyosh 20s linear infinite ;
+    opacity: 1;
+    transform: translateX(-200px);
+    border-radius: 50%;
+   box-shadow: yellow 5px 5px 500px;
+}
+@keyframes quyosh{
+    to{
+        transform: rotate(360deg);
+    }
+    25%{
+        transform: translate(500px, -200px);
+
+    }
+    50%{
+        transform: translate(1200px, -500px);
+        opacity: 1;
+    }
+    75%{
+      
+        transform: translate(3000px, -200px);
+        opacity: 0;
+    }
+    100%{
+      
+      opacity: 0;
+    }
+}
+.yol{
+    width: 3000px;
+    background: dimgray;
+    
+   position: relative;
+   overflow: hidden;
+}
+.yol .chiziq{
+    border: 10px dashed #fff;
+}
+.moshina{
+  
+    
+}
+
+.yol .moshina img{
+margin-left: 100%;
+width: 250px;
+height: 250px;
+animation: moshina 15s linear infinite;
+
+}
+@keyframes moshina{
+    25%{
+        transform: translateX(-1000px);
+    }
+    50%{
+        transform: translateX(-2000px);
+    }
+    75%{
+        transform: translateX(-2750px);
+        opacity: 1;
+    }
+    100%{
+        
+        transform: translateX(-3200px);
+        opacity: 1;
+      
+    }
+}
+
+.yol .moshina1 img{
+width: 250px;
+height: 250px;
+
+opacity: 1;
+animation: moshina1 15s linear infinite;
+}
+@keyframes moshina1{
+25%{
+transform: translateX(1000px);
+}
+50%{
+    transform: translateX(2000px);
+}
+75%{
+    transform: translateX(2750px);
+    opacity: 1;
+}
+100%{
+    transform: translateX(3200px);
+    opacity: 0;
+}
+}
